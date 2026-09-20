@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState, type RefObject } from 'react';
+import { useEffect, useRef, type RefObject } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { IMAGES } from '../content/images';
-import { siteContent, type HeroCallout } from '../content/site';
+import { siteContent } from '../content/site';
 import { WhatsAppLink } from './ui/WhatsAppLink';
 import { track } from '../lib/analytics';
 import { useHoverCapable, useScrolled } from '../lib/hooks';
@@ -68,67 +68,13 @@ function Spotlight({ containerRef }: { containerRef: RefObject<HTMLElement | nul
   );
 }
 
-/** Architectural drawing annotation anchored to an object in the photograph. */
-function Callout({ c, index, onHover }: { c: HeroCallout; index: number; onHover: (id: string | null) => void }) {
-  const up = c.direction === 'up';
-  const connector = 'h-10 w-px';
-
-  return (
-    <motion.div
-      className="group absolute"
-      style={{ left: `${c.x * 100}%`, top: `${c.y * 100}%` }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 2 + index * 0.28, ease: EASE }}
-      onMouseEnter={() => onHover(c.id)}
-      onMouseLeave={() => onHover(null)}
-    >
-      {/* enlarged, invisible hit area */}
-      <div className="relative left-[-3.5px] top-[-3.5px] p-4 after:absolute after:-inset-4 after:content-['']">
-        {/* champagne point */}
-        <span
-          aria-hidden="true"
-          className="absolute left-0 top-0 h-1.75 w-1.75 rounded-full bg-champagne shadow-[0_0_0_3px_rgba(200,168,117,0.22)] transition-transform duration-500 ease-editorial group-hover:scale-150"
-        />
-        {/* connecting line */}
-        <span
-          aria-hidden="true"
-          className={`absolute left-0.75 ${connector} bg-ivory/45 transition-colors duration-500 group-hover:bg-champagne/80 ${
-            up ? 'bottom-1.75' : 'top-1.75'
-          }`}
-        />
-        {/* label */}
-        <div
-          className={`absolute left-0.75 flex w-max items-center gap-2.5 ${up ? 'bottom-[calc(7px+2.5rem)]' : 'top-[calc(7px+2.5rem)]'}`}
-        >
-          <span
-            aria-hidden="true"
-            className="h-px w-6 bg-ivory/45 transition-colors duration-500 group-hover:bg-champagne/80"
-          />
-          <span className="block">
-            <span className="eyebrow block text-[10px] leading-none text-ivory/90 transition-opacity duration-500 group-hover:text-ivory">
-              {c.label}
-            </span>
-            <span className="mt-1.5 block text-[11px] leading-tight text-ivory/55 transition-colors duration-500 group-hover:text-ivory/80">
-              {c.note}
-            </span>
-          </span>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
 export function Hero() {
   const reduce = useReducedMotion();
   const capable = useHoverCapable();
   const scrolled = useScrolled(80);
   const sectionRef = useRef<HTMLElement>(null);
-  const [hoveredCallout, setHoveredCallout] = useState<string | null>(null);
   const { hero } = siteContent;
   const img = IMAGES.hero;
-  const mobileCallouts = hero.callouts.filter((c) => c.onMobile);
-  const hovered = hero.callouts.find((c) => c.id === hoveredCallout);
 
   return (
     <section
@@ -196,18 +142,6 @@ export function Hero() {
         }}
       />
 
-      {/* local brightening beneath a hovered callout — almost felt, not seen */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-[2] transition-opacity duration-700"
-        style={{
-          opacity: hovered ? 1 : 0,
-          background: hovered
-            ? `radial-gradient(340px circle at ${hovered.x * 100}% ${hovered.y * 100}%, rgba(244,240,231,0.09), rgba(244,240,231,0) 70%)`
-            : 'none',
-        }}
-      />
-
       {/* cursor spotlight (Layer 3.5) — desktop, motion-capable only */}
       {capable && !reduce && <Spotlight containerRef={sectionRef} />}
 
@@ -253,24 +187,6 @@ export function Hero() {
           {hero.supporting}
         </motion.p>
 
-        {/* Mobile annotation markers — inline so they never collide with type */}
-        <motion.div
-          className="mt-6 flex flex-wrap gap-3 md:hidden"
-          initial={reduce ? undefined : { opacity: 0, y: 10 }}
-          animate={reduce ? undefined : { opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 1.6, ease: EASE }}
-        >
-          {mobileCallouts.map((c) => (
-            <span
-              key={c.id}
-              className="flex items-center gap-2 rounded-full border border-ivory/25 bg-charcoal/35 px-3.5 py-2 backdrop-blur-sm"
-            >
-              <span aria-hidden="true" className="h-[6px] w-[6px] rounded-full bg-champagne" />
-              <span className="eyebrow text-[9px] text-ivory">{c.label}</span>
-            </span>
-          ))}
-        </motion.div>
-
         {/* Layer 6 — CTA */}
         <motion.div
           className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4"
@@ -301,12 +217,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Layer 4 — architectural callouts (desktop: hover-annotated, mobile: compact markers) */}
-      {/* <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
-        {hero.callouts.map((c, i) => (
-          <Callout key={c.id} c={c} index={i} onHover={setHoveredCallout} />
-        ))}
-      </div> */}
       {/* Scroll indicator — disappears once the visitor moves */}
       <div
         aria-hidden={scrolled}
