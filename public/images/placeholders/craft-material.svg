@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder illustration: material study — fanned fabric swatches with weave texture">
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#F4F0E7" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="#2A2C2E"/>
+  <rect width="1200" height="900" fill="url(#dots)"/>
+
+  <!-- fanned swatches -->
+  <g stroke="#F4F0E7" stroke-opacity="0.7" stroke-width="2" fill="#2A2C2E">
+    <rect x="360" y="200" width="240" height="320" rx="14" transform="rotate(-18 480 520)"/>
+    <rect x="390" y="215" width="240" height="320" rx="14" transform="rotate(-7 510 535)"/>
+    <rect x="420" y="228" width="240" height="320" rx="14" transform="rotate(4 540 548)"/>
+    <rect x="445" y="238" width="240" height="320" rx="14" transform="rotate(15 565 558)"/>
+  </g>
+  <!-- weave texture on the front swatch -->
+  <g stroke="#C8A875" stroke-width="1.75" stroke-dasharray="2 9" opacity="0.9">
+    <path d="M470 282 L676 340"/>
+    <path d="M462 318 L668 376"/>
+    <path d="M454 354 L660 412"/>
+    <path d="M446 390 L652 448"/>
+    <path d="M438 426 L644 484"/>
+  </g>
+
+  <!-- measuring tape hint -->
+  <g stroke="#F4F0E7" stroke-opacity="0.55" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M180 700 C 320 660, 520 700, 700 668 C 840 644, 920 660, 1010 640"/>
+    <line x1="260" y1="686" x2="260" y2="702"/>
+    <line x1="380" y1="682" x2="380" y2="698"/>
+    <line x1="500" y1="678" x2="500" y2="694"/>
+    <line x1="620" y1="670" x2="620" y2="686"/>
+  </g>
+
+  <g stroke="#C8A875" stroke-width="1.5" opacity="0.75" fill="none">
+    <path d="M28 44 V28 H44"/>
+    <path d="M1156 28 H1172 V44"/>
+    <path d="M1172 856 V872 H1156"/>
+    <path d="M44 872 H28 V856"/>
+  </g>
+  <text x="52" y="856" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="3.5" fill="#8E8A82">PLACEHOLDER ILLUSTRATION · SWAP WITH RAMZAAR PHOTOGRAPHY</text>
+</svg>

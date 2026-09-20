@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder illustration: custom sectional sofa elevation">
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#202223" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="#F4F0E7"/>
+  <rect width="1200" height="900" fill="url(#dots)"/>
+  <circle cx="600" cy="560" r="400" fill="#A99D8A" fill-opacity="0.07"/>
+
+  <g transform="translate(0,80)">
+    <g stroke="#202223" stroke-opacity="0.8" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="282" y="506" width="636" height="54" rx="6"/>
+      <rect x="334" y="458" width="262" height="52" rx="12"/>
+      <rect x="604" y="458" width="262" height="52" rx="12"/>
+      <rect x="334" y="340" width="262" height="112" rx="12"/>
+      <rect x="604" y="340" width="262" height="112" rx="12"/>
+      <rect x="270" y="380" width="56" height="180" rx="14"/>
+      <rect x="874" y="380" width="56" height="180" rx="14"/>
+      <rect x="298" y="560" width="12" height="26"/>
+      <rect x="890" y="560" width="12" height="26"/>
+      <rect x="352" y="396" width="92" height="92" rx="18" transform="rotate(-10 398 442)" fill="#A99D8A" fill-opacity="0.28" stroke="#5A4637"/>
+      <rect x="742" y="396" width="92" height="92" rx="18" transform="rotate(8 788 442)" fill="#A99D8A" fill-opacity="0.28" stroke="#5A4637"/>
+    </g>
+    <line x1="344" y1="512" x2="856" y2="512" stroke="#C8A875" stroke-width="2" stroke-dasharray="2 9"/>
+  </g>
+
+  <line x1="160" y1="672" x2="1040" y2="672" stroke="#202223" stroke-opacity="0.3" stroke-width="2"/>
+  <line x1="160" y1="726" x2="420" y2="726" stroke="#C8A875" stroke-width="2" stroke-dasharray="10 9"/>
+
+  <g stroke="#C8A875" stroke-width="1.5" opacity="0.8" fill="none">
+    <path d="M28 44 V28 H44"/>
+    <path d="M1156 28 H1172 V44"/>
+    <path d="M1172 856 V872 H1156"/>
+    <path d="M44 872 H28 V856"/>
+  </g>
+  <text x="52" y="856" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="3.5" fill="#8E8A82">PLACEHOLDER ILLUSTRATION · SWAP WITH RAMZAAR PHOTOGRAPHY</text>
+</svg>

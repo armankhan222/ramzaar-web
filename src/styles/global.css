@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* ————————————————————————————————————————————————
+   RAMZAAR brand tokens (Brand Guidelines §04)
+   Deep Charcoal + Warm Ivory are the core language.
+   Champagne behaves like brushed brass: selective,
+   tactile — never an all-over gold treatment.
+   ———————————————————————————————————————————————— */
+:root {
+  --charcoal: #202223;
+  --ivory: #f4f0e7;
+  --champagne: #c8a875;
+  --taupe: #a99d8a;
+  --stone: #8e8a82;
+  --brown: #5a4637;
+}
+
+@theme {
+  --color-charcoal: #202223;
+  --color-ivory: #f4f0e7;
+  --color-champagne: #c8a875;
+  --color-taupe: #a99d8a;
+  --color-stone: #8e8a82;
+  --color-brown: #5a4637;
+
+  --font-serif: "Fraunces Variable", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Editorial easing — shared by every deliberate motion on the site */
+  --ease-editorial: cubic-bezier(0.77, 0, 0.18, 1);
+  --font-weight-editorial: 360;
+}
+
+/* ————— Base ————— */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ivory font-sans text-charcoal antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--champagne);
+  color: var(--charcoal);
+}
+
+:focus-visible {
+  outline: 2px solid var(--champagne);
+  outline-offset: 3px;
+}
+
+/* ————— Editorial utilities ————— */
+
+/* Tiny uppercase tracked label. Font-size set per use (text-[Npx]). */
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Faint architectural dot-grid for charcoal chapters */
+@utility blueprint-dots {
+  background-image: radial-gradient(rgba(244, 240, 231, 0.07) 1px, transparent 1.4px);
+  background-size: 26px 26px;
+}
+
+/* ————— Reduced motion ————— */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

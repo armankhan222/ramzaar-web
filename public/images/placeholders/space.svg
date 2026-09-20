@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Placeholder illustration: front elevation of a custom sofa, drawn like an architect's sheet">
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#F4F0E7" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#2A2C2E"/>
+  <rect width="1200" height="750" fill="url(#dots)"/>
+
+  <g transform="translate(0,60)">
+    <g stroke="#F4F0E7" stroke-opacity="0.8" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="282" y="506" width="636" height="54" rx="6"/>
+      <rect x="334" y="458" width="262" height="52" rx="12"/>
+      <rect x="604" y="458" width="262" height="52" rx="12"/>
+      <rect x="334" y="340" width="262" height="112" rx="12"/>
+      <rect x="604" y="340" width="262" height="112" rx="12"/>
+      <rect x="270" y="380" width="56" height="180" rx="14"/>
+      <rect x="874" y="380" width="56" height="180" rx="14"/>
+      <rect x="298" y="560" width="12" height="26"/>
+      <rect x="890" y="560" width="12" height="26"/>
+      <rect x="352" y="396" width="92" height="92" rx="18" transform="rotate(-10 398 442)" fill="#A99D8A" fill-opacity="0.22" stroke="#A99D8A"/>
+      <rect x="742" y="396" width="92" height="92" rx="18" transform="rotate(8 788 442)" fill="#A99D8A" fill-opacity="0.22" stroke="#A99D8A"/>
+    </g>
+    <line x1="344" y1="512" x2="856" y2="512" stroke="#C8A875" stroke-width="2" stroke-dasharray="2 9"/>
+  </g>
+
+  <line x1="140" y1="650" x2="1060" y2="650" stroke="#F4F0E7" stroke-opacity="0.28" stroke-width="2"/>
+  <g stroke="#F4F0E7" stroke-opacity="0.25" stroke-width="1.5">
+    <line x1="200" y1="650" x2="200" y2="664"/>
+    <line x1="360" y1="650" x2="360" y2="664"/>
+    <line x1="520" y1="650" x2="520" y2="664"/>
+    <line x1="680" y1="650" x2="680" y2="664"/>
+    <line x1="840" y1="650" x2="840" y2="664"/>
+    <line x1="1000" y1="650" x2="1000" y2="664"/>
+  </g>
+
+  <g stroke="#C8A875" stroke-width="1.5" opacity="0.75" fill="none">
+    <path d="M28 44 V28 H44"/>
+    <path d="M1156 28 H1172 V44"/>
+    <path d="M1172 706 V722 H1156"/>
+    <path d="M44 722 H28 V706"/>
+  </g>
+  <text x="52" y="706" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="3.5" fill="#8E8A82">PLACEHOLDER ILLUSTRATION · SWAP WITH RAMZAAR PHOTOGRAPHY</text>
+</svg>

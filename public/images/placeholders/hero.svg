@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Placeholder illustration: contemporary living room elevation with custom sofa, window, curtains and pendant light">
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#F4F0E7" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#2A2C2E"/>
+  <rect width="1920" height="1080" fill="url(#dots)"/>
+
+  <!-- floor -->
+  <line x1="120" y1="880" x2="1800" y2="880" stroke="#F4F0E7" stroke-opacity="0.28" stroke-width="2"/>
+  <!-- rug -->
+  <ellipse cx="860" cy="985" rx="480" ry="34" fill="none" stroke="#F4F0E7" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="10 10"/>
+
+  <!-- pendant light -->
+  <g stroke="#F4F0E7" stroke-opacity="0.7" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <line x1="860" y1="0" x2="860" y2="242"/>
+    <path d="M795 310 A65 65 0 0 1 925 310 Z"/>
+  </g>
+  <circle cx="860" cy="322" r="6" fill="#C8A875"/>
+
+  <!-- wall art -->
+  <g stroke="#F4F0E7" stroke-opacity="0.4" stroke-width="2" fill="none">
+    <rect x="1120" y="340" width="130" height="170"/>
+    <path d="M1140 480 L1230 370"/>
+  </g>
+
+  <!-- window -->
+  <g stroke="#F4F0E7" stroke-opacity="0.65" stroke-width="2.5" fill="none">
+    <rect x="1330" y="200" width="340" height="620" fill="#F4F0E7" fill-opacity="0.04"/>
+    <line x1="1500" y1="200" x2="1500" y2="820"/>
+    <line x1="1330" y1="406" x2="1670" y2="406"/>
+    <line x1="1330" y1="613" x2="1670" y2="613"/>
+  </g>
+  <!-- curtain rod -->
+  <line x1="1240" y1="170" x2="1790" y2="170" stroke="#C8A875" stroke-opacity="0.55" stroke-width="2.5"/>
+  <circle cx="1240" cy="170" r="5" fill="#C8A875"/>
+  <circle cx="1790" cy="170" r="5" fill="#C8A875"/>
+  <!-- curtain folds -->
+  <g stroke="#F4F0E7" stroke-opacity="0.5" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M1272 180 C 1282 400, 1262 700, 1276 845"/>
+    <path d="M1292 180 C 1302 400, 1282 700, 1296 845"/>
+    <path d="M1312 180 C 1322 400, 1302 700, 1316 845"/>
+    <path d="M1668 180 C 1658 400, 1678 700, 1664 845"/>
+    <path d="M1688 180 C 1678 400, 1698 700, 1684 845"/>
+    <path d="M1708 180 C 1698 400, 1718 700, 1704 845"/>
+  </g>
+
+  <!-- plant -->
+  <g stroke="#F4F0E7" stroke-opacity="0.55" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M230 796 h96 l-14 84 h-68 Z"/>
+    <path d="M278 796 C 270 700, 250 660, 235 600"/>
+    <path d="M278 796 C 285 680, 300 640, 315 585"/>
+    <path d="M278 796 C 276 720, 268 680, 278 620"/>
+    <ellipse cx="235" cy="592" rx="14" ry="40" transform="rotate(-15 235 592)"/>
+    <ellipse cx="316" cy="578" rx="14" ry="40" transform="rotate(18 316 578)"/>
+    <ellipse cx="278" cy="612" rx="13" ry="38"/>
+  </g>
+
+  <!-- sofa -->
+  <g transform="translate(212,247) scale(1.08)">
+    <g stroke="#F4F0E7" stroke-opacity="0.8" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="282" y="506" width="636" height="54" rx="6"/>
+      <rect x="334" y="458" width="262" height="52" rx="12"/>
+      <rect x="604" y="458" width="262" height="52" rx="12"/>
+      <rect x="334" y="340" width="262" height="112" rx="12"/>
+      <rect x="604" y="340" width="262" height="112" rx="12"/>
+      <rect x="270" y="380" width="56" height="180" rx="14"/>
+      <rect x="874" y="380" width="56" height="180" rx="14"/>
+      <rect x="298" y="560" width="12" height="26"/>
+      <rect x="890" y="560" width="12" height="26"/>
+      <rect x="352" y="396" width="92" height="92" rx="18" transform="rotate(-10 398 442)" fill="#A99D8A" fill-opacity="0.22" stroke="#A99D8A"/>
+      <rect x="742" y="396" width="92" height="92" rx="18" transform="rotate(8 788 442)" fill="#A99D8A" fill-opacity="0.22" stroke="#A99D8A"/>
+    </g>
+    <line x1="344" y1="512" x2="856" y2="512" stroke="#C8A875" stroke-width="2" stroke-dasharray="2 9"/>
+  </g>
+
+  <!-- width dimension (brief §18) -->
+  <g stroke="#C8A875" stroke-width="2">
+    <line x1="503" y1="948" x2="1216" y2="948"/>
+    <line x1="503" y1="938" x2="503" y2="958"/>
+    <line x1="1216" y1="938" x2="1216" y2="958"/>
+  </g>
+  <text x="860" y="934" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="19" letter-spacing="5" fill="#C8A875">2400 MM</text>
+
+  <!-- corner ticks -->
+  <g stroke="#C8A875" stroke-width="1.5" opacity="0.75" fill="none">
+    <path d="M28 44 V28 H44"/>
+    <path d="M1876 28 H1892 V44"/>
+    <path d="M1892 1036 V1052 H1876"/>
+    <path d="M44 1052 H28 V1036"/>
+  </g>
+  <text x="52" y="1030" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="3.5" fill="#8E8A82">PLACEHOLDER ILLUSTRATION · SWAP WITH RAMZAAR PHOTOGRAPHY</text>
+</svg>

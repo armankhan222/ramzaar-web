@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Placeholder illustration: warm evening living room — sofa, rug and pendant light, wide elevation">
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#F4F0E7" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#2A2C2E"/>
+  <rect width="1920" height="1080" fill="url(#dots)"/>
+
+  <!-- glow -->
+  <circle cx="960" cy="420" r="300" fill="#C8A875" fill-opacity="0.05"/>
+
+  <!-- floor -->
+  <line x1="140" y1="860" x2="1780" y2="860" stroke="#F4F0E7" stroke-opacity="0.28" stroke-width="2"/>
+  <!-- rug -->
+  <ellipse cx="960" cy="960" rx="520" ry="34" fill="none" stroke="#F4F0E7" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="10 10"/>
+
+  <!-- pendant -->
+  <g stroke="#F4F0E7" stroke-opacity="0.7" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <line x1="960" y1="0" x2="960" y2="300"/>
+    <path d="M880 380 A80 80 0 0 1 1040 380 Z"/>
+  </g>
+  <circle cx="960" cy="394" r="7" fill="#C8A875"/>
+
+  <!-- window -->
+  <g stroke="#F4F0E7" stroke-opacity="0.55" stroke-width="2.5" fill="none">
+    <rect x="1420" y="220" width="320" height="580" fill="#F4F0E7" fill-opacity="0.04"/>
+    <line x1="1580" y1="220" x2="1580" y2="800"/>
+  </g>
+
+  <!-- sofa -->
+  <g stroke="#F4F0E7" stroke-opacity="0.8" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="412" y="580" width="700" height="60" rx="8"/>
+    <rect x="470" y="528" width="290" height="56" rx="14"/>
+    <rect x="766" y="528" width="290" height="56" rx="14"/>
+    <rect x="470" y="400" width="290" height="122" rx="14"/>
+    <rect x="766" y="400" width="290" height="122" rx="14"/>
+    <rect x="398" y="444" width="60" height="196" rx="16"/>
+    <rect x="1066" y="444" width="60" height="196" rx="16"/>
+    <rect x="432" y="640" width="12" height="28"/>
+    <rect x="1080" y="640" width="12" height="28"/>
+  </g>
+  <line x1="480" y1="586" x2="1044" y2="586" stroke="#C8A875" stroke-width="2" stroke-dasharray="2 9"/>
+
+  <!-- coffee table -->
+  <g stroke="#F4F0E7" stroke-opacity="0.6" stroke-width="2" fill="none" stroke-linecap="round">
+    <ellipse cx="960" cy="800" rx="150" ry="18"/>
+    <line x1="880" y1="812" x2="872" y2="860"/>
+    <line x1="1040" y1="812" x2="1048" y2="860"/>
+  </g>
+
+  <g stroke="#C8A875" stroke-width="1.5" opacity="0.75" fill="none">
+    <path d="M28 44 V28 H44"/>
+    <path d="M1876 28 H1892 V44"/>
+    <path d="M1892 1036 V1052 H1876"/>
+    <path d="M44 1052 H28 V1036"/>
+  </g>
+  <text x="52" y="1030" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="3.5" fill="#8E8A82">PLACEHOLDER ILLUSTRATION · SWAP WITH RAMZAAR PHOTOGRAPHY</text>
+</svg>
