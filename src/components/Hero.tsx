@@ -281,11 +281,11 @@ export function Hero() {
       </div>
 
       {/* Layer 4 — architectural callouts (desktop: hover-annotated, mobile: compact markers) */}
-      {/* <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
+      <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
         {hero.callouts.map((c, i) => (
           <Callout key={c.id} c={c} index={i} onHover={setHoveredCallout} />
         ))}
-      </div> */}
+      </div>
       {/* Scroll indicator — disappears once the visitor moves */}
       <div
         aria-hidden={scrolled}

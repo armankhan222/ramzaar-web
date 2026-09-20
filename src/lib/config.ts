@@ -6,15 +6,13 @@
 
 /**
  * WhatsApp number in international format — digits only.
- * No "+", spaces or dashes. e.g. "919820123456"
+ * No "+", spaces or dashes. e.g. "919869134207"
  */
-// TODO(REPLACE): client's real WhatsApp number.
-export const WHATSAPP_NUMBER = 'REPLACE_WITH_CLIENT_NUMBER';
+export const WHATSAPP_NUMBER = '919869134207';
 
 export const CONTACT = {
-  // TODO(REPLACE): real phone number before launch.
-  phoneDisplay: '+91 00000 00000',
-  phoneHref: 'tel:+910000000000',
+  phoneDisplay: '+91 98691 34207',
+  phoneHref: 'tel:+919869134207',
   // TODO(REPLACE): real email before launch.
   email: 'hello@ramzaar.com',
   // TODO(REPLACE): real Instagram profile before launch.
