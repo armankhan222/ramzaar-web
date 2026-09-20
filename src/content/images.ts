@@ -86,6 +86,20 @@ export const IMAGES = {
     tag: 'WORK_CHAIRS_IMAGE',
     tone: 'light',
   },
+  workSofaCovers: {
+    src: '/images/philosophy.jpg',
+    focal: 'center',
+    alt: 'Tailored sofa covers and fitted slipcovers in premium washable fabrics',
+    tag: 'WORK_SOFA_COVERS_IMAGE',
+    tone: 'light',
+  },
+  workRepair: {
+    src: '/images/craft-detail.jpg',
+    focal: 'center',
+    alt: 'Sofa repair, spring replacement, foam padding and frame restoration',
+    tag: 'WORK_REPAIR_IMAGE',
+    tone: 'light',
+  },
   craftMaterial: {
     src: '/images/craft-material.jpg',
     alt: 'Premium fabric swatches, leather samples, and material textures in the RAMZAAR workshop',

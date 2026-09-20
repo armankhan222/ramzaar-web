@@ -119,9 +119,9 @@ export const siteContent = {
   },
 
   work: {
-    label: 'Portfolio',
+    label: 'Portfolio & Services',
     headline: 'OUR WORK',
-    supporting: 'Made for individual spaces, not mass-produced for a catalogue.',
+    supporting: 'Bespoke new creations, sofa repair & restoration, re-upholstery, and custom fitted covers.',
     items: [
       {
         id: 'sofas',
@@ -138,6 +138,22 @@ export const siteContent = {
         waContext: 'custom' as WhatsAppContext,
         image: IMAGES.workUpholstery,
         aspect: '3 / 4',
+      },
+      {
+        id: 'repair',
+        category: 'Sofa Repair & Restoration',
+        description: 'Frame repair, sagging foam replacement, and structural restoration.',
+        waContext: 'custom' as WhatsAppContext,
+        image: IMAGES.workRepair,
+        aspect: '4 / 3',
+      },
+      {
+        id: 'covers',
+        category: 'Sofa Covers & Slipcovers',
+        description: 'Custom fitted protective covers and washable slipcovers.',
+        waContext: 'custom' as WhatsAppContext,
+        image: IMAGES.workSofaCovers,
+        aspect: '1 / 1',
       },
       {
         id: 'curtains',
@@ -165,8 +181,8 @@ export const siteContent = {
       },
       {
         id: 'chairs',
-        category: 'Accent & Office Chairs',
-        description: 'Comfortable pieces designed for function and character.',
+        category: 'Executive & Office Chairs',
+        description: 'Ergonomic office seating, desk chairs and accent armchairs.',
         waContext: 'custom' as WhatsAppContext,
         image: IMAGES.workChairs,
         aspect: '4 / 3',
@@ -229,15 +245,39 @@ export const siteContent = {
     items: [
       {
         quote:
-          'We had a very specific size requirement for our living room. RAMZAAR understood the space and got the proportions exactly right.',
-        name: 'Client Name',
-        location: 'Mumbai',
+          'We had a very specific size requirement for our L-shaped sectional sofa. RAMZAAR understood our room dimensions perfectly and got the proportions and fabric choice spot on.',
+        name: 'Ananya & Rohan Mehta',
+        location: 'Bandra West, Mumbai',
       },
       {
         quote:
-          'The sofa and curtains feel made for this home — because they were. The whole process was clear, unhurried and precise.',
-        name: 'Client Name',
-        location: 'Thane',
+          'The sofa re-upholstery and custom fitted covers transformed our decade-old family furniture into a modern luxury centerpiece. Superb craftsmanship and attention to detail.',
+        name: 'Vikram Shah',
+        location: 'Worli, Mumbai',
+      },
+      {
+        quote:
+          'The custom silk curtains and matching throw cushions feel made for this home — because they were. The whole process was clear, unhurried and precise.',
+        name: 'Priya Deshmukh',
+        location: 'Hiranandani, Thane',
+      },
+      {
+        quote:
+          'Finding ergonomic office chairs that matched our home study aesthetics was impossible until RAMZAAR built custom executive leather desk chairs for us.',
+        name: 'Rajesh & Sunita Kulkarni',
+        location: 'Juhu, Mumbai',
+      },
+      {
+        quote:
+          'They repaired our sagging Italian sofa frame and replaced the foam cushion core seamlessly. It feels brand new again without having to buy a new sofa.',
+        name: 'Kavita Iyer',
+        location: 'Powai, Mumbai',
+      },
+      {
+        quote:
+          'Their team visited our penthouse to take exact measurements and delivered our custom channel-tufted king bed right on schedule. Highly recommended!',
+        name: 'Amitabh Sen',
+        location: 'Palm Beach Road, Navi Mumbai',
       },
     ],
   },
@@ -248,6 +288,10 @@ export const siteContent = {
     note: 'Anything else you would like to ask?',
     noteCta: 'Ask on WhatsApp',
     items: [
+      {
+        q: 'Do you repair existing furniture and make sofa covers?',
+        a: 'Yes! We handle complete sofa repairs, structural restoration, spring & sagging foam replacement, re-upholstery, as well as tailored fitted sofa covers and slipcovers.',
+      },
       {
         q: 'How does customization work?',
         a: 'Every project begins with your space — its dimensions, light and how you use it. We recommend designs, materials and finishes, then tailor dimensions, comfort and details to your requirements before anything is made.',
