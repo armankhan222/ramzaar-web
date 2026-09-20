@@ -137,14 +137,35 @@ export function Hero() {
       aria-label={`${siteContent.brand.name} — ${siteContent.brand.tagline}`}
       className="relative flex h-svh min-h-[600px] flex-col overflow-hidden bg-charcoal text-ivory md:min-h-[720px]"
     >
-      {/* Layer 1 — photograph with a slow scale correction on load */}
+      {/* Layer 1 — photograph or background video with subtle cinematic scale */}
       <motion.div
         className="absolute inset-0"
         initial={reduce ? undefined : { scale: 1.04, opacity: 0.55 }}
         animate={reduce ? undefined : { scale: 1, opacity: 1 }}
         transition={{ duration: 2.4, ease: EASE }}
       >
-        {img.src ? (
+        {img.videoSrc ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={img.src ?? undefined}
+            className="h-full w-full object-cover"
+          >
+            <source src={img.videoSrc} type="video/mp4" />
+            {img.src && (
+              <img
+                src={img.src}
+                alt={img.alt}
+                fetchPriority="high"
+                decoding="async"
+                style={{ objectPosition: img.focal }}
+                className="h-full w-full object-cover"
+              />
+            )}
+          </video>
+        ) : img.src ? (
           <img
             src={img.src}
             alt={img.alt}
@@ -281,11 +302,11 @@ export function Hero() {
       </div>
 
       {/* Layer 4 — architectural callouts (desktop: hover-annotated, mobile: compact markers) */}
-      <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
+      {/* <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
         {hero.callouts.map((c, i) => (
           <Callout key={c.id} c={c} index={i} onHover={setHoveredCallout} />
         ))}
-      </div>
+      </div> */}
       {/* Scroll indicator — disappears once the visitor moves */}
       <div
         aria-hidden={scrolled}

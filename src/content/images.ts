@@ -14,6 +14,8 @@
 export type ImageSlot = {
   /** Path to the image, or null to render the branded placeholder. */
   src: string | null;
+  /** Optional video path for looping background video. */
+  videoSrc?: string | null;
   /** Meaningful alt text — describe the intended real photograph. */
   alt: string;
   /** object-position value, e.g. "center 30%". */
@@ -25,10 +27,11 @@ export type ImageSlot = {
 };
 
 export const IMAGES = {
-  /** High-resolution photograph of RAMZAAR living room hero elevation. */
+  /** High-resolution photograph or looping video of RAMZAAR living room hero elevation. */
   hero: {
     src: '/images/placeholders/hero.png',
-    alt: 'High-resolution photograph of a contemporary living room elevation with a custom sofa, curtains and pendant light.',
+    videoSrc: '/videos/hero.mp4',
+    alt: 'High-resolution photograph and ambient video of a contemporary living room elevation with a custom sofa, curtains and pendant light.',
     focal: 'center',
     tag: 'HERO_IMAGE',
     tone: 'dark',
