@@ -46,13 +46,13 @@ export function FAQ() {
           </div>
 
           <div className="lg:col-span-8">
-            <Reveal>
-              <div className="border-t border-charcoal/15">
-                {faq.items.map((item, i) => {
-                  const id = `faq-${i}`;
-                  const open = openId === id;
-                  return (
-                    <div key={id} className="border-b border-charcoal/15">
+            <div className="border-t border-charcoal/15">
+              {faq.items.map((item, i) => {
+                const id = `faq-${i}`;
+                const open = openId === id;
+                return (
+                  <Reveal key={id} delay={i * 0.05} y={16}>
+                    <div className="border-b border-charcoal/15">
                       <h3>
                         <button
                           type="button"
@@ -88,10 +88,10 @@ export function FAQ() {
                         </div>
                       </div>
                     </div>
-                  );
-                })}
-              </div>
-            </Reveal>
+                  </Reveal>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

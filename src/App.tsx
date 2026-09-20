@@ -11,6 +11,7 @@ import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
+import { FloatingWhatsApp } from './components/ui/FloatingWhatsApp';
 import { initScrollTracking } from './lib/analytics';
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         <FinalCTA />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </>
   );
 }
