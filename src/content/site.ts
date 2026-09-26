@@ -31,6 +31,7 @@ export const siteContent = {
   nav: {
     links: [
       { label: 'Work', href: '#work' },
+      { label: 'Gallery', href: '#gallery' },
       { label: 'Process', href: '#process' },
       { label: 'Craft', href: '#craft' },
       { label: 'Spaces', href: '#spaces' },

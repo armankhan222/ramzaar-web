@@ -29,9 +29,9 @@ export type ImageSlot = {
 export const IMAGES = {
   /** High-resolution photograph or looping video of RAMZAAR living room hero elevation. */
   hero: {
-    src: '/images/placeholders/hero.png',
+    src: '/images/hero-sofa.jpg',
     videoSrc: '/videos/hero.mp4',
-    alt: 'High-resolution photograph and ambient video of a contemporary living room elevation with a custom sofa, curtains and pendant light.',
+    alt: 'High-resolution photograph of a contemporary RAMZAAR living room elevation with custom lounge sofa, sheer curtains and natural morning light.',
     focal: 'center',
     tag: 'HERO_IMAGE',
     tone: 'dark',

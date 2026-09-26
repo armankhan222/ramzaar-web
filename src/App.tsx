@@ -5,6 +5,7 @@ import { Philosophy } from './components/Philosophy';
 import { SpaceSection } from './components/SpaceSection';
 import { Process } from './components/Process';
 import { WorkGallery } from './components/WorkGallery';
+import { UnifiedMasterGallery } from './components/UnifiedMasterGallery';
 import { Craftsmanship } from './components/Craftsmanship';
 import { Sectors } from './components/Sectors';
 import { Testimonials } from './components/Testimonials';
@@ -34,6 +35,7 @@ export default function App() {
         <SpaceSection />
         <Process />
         <WorkGallery />
+        <UnifiedMasterGallery />
         <Craftsmanship />
         <Sectors />
         <Testimonials />
